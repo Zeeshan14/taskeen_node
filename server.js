@@ -25,6 +25,7 @@ var sql = require("mssql");
     };
 
 app.use(express.json());
+
 app.use(express.urlencoded());
 
 app.use(express.static('public'));
@@ -60,4 +61,7 @@ app.post('/view',(req,res)=>{ //yahan dekho line 40
   });
 
 });
+
+//after editing or adding new files and folder you simply need to do this.
+
 
